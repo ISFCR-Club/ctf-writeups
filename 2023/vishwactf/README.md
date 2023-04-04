@@ -4,9 +4,9 @@
 
 We are given 4 wav files, and description says to arrange them to get message. Using Audacity we can get the spectrograms for them. Arranging 10 kg up above and 10 kg down below gives text “Gosqrd”. Similarly for 20 kg we get “Romnz”. Seems to be some simple encryption. Caesar shifting them separately gives “Light Weight”, one of the dialogues of Ronnie Coleman!
 
-![1.png](/home/arrow/Desktop/projects/github/ctf-writeups/2023/vishwactf/images/1.png)
+![1.png](./images/1.png)
 
-![2.png](/home/arrow/Desktop/projects/github/ctf-writeups/2023/vishwactf/images/2.png)
+![2.png](./images/2.png)
 
 Flag: `VishwaCTF{Light_Weight}`
 
