@@ -570,4 +570,4 @@ This protagonist can be found by revresing the tail end of the audio file. The p
 
 ### Mascot
 
-For this challenge, we had to navigate to the given web page to seemingly play a tic-tac-toe game, but upon inspection of the webpage, it was possible to locate exposed .git links which led us to the repository housing the code for the website. This repository also contained a markdown file containing the flag: `VishwaCTF{0ctOc@t_Ma5c0t}`
+For this challenge, we had to navigate to the given web page to play a tic-tac-toe game, but upon inspection of the webpage, it was possible to locate exposed .git links which led us to the repository housing the code for the website. This repository also contained a markdown file with the flag: `VishwaCTF{0ctOc@t_Ma5c0t}`
