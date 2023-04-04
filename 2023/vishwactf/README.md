@@ -555,3 +555,19 @@ print(flag)
 ```
 
 Flag: `VishwaCTF{m4k3_it_possibl3_b7cdc517}`
+
+### Just Files
+
+Upon downloading and unzipping the given zip-file, we are presented with 2 images. A png and a jpeg.
+After running strings on the png file, we can see that the png file can be unzipped to reveal a .wav file.
+This wav file gives us a message in morse directing us to find the name of a protagonist: 
+```
+R E V E R S E T H E A U D I O A N D Y O U S H O U L D F I N D N A M E O F P R O T A G O N I S T . I T O L D Y O U T H A T S T O R Y I N P N G F I L E .
+
+```
+This protagonist can be found by revresing the tail end of the audio file. The protagonist is "lucifer". After this, running stegseek on the wav file with lucifer as the password yielded the flag: `VishwaCTF{lucifer_S01E03}`
+
+
+### Mascot
+
+For this challenge, we had to navigate to the given web page to seemingly play a tic-tac-toe game, but upon inspection of the webpage, it was possible to locate exposed .git links which led us to the repository housing the code for the website. This repository also contained a markdown file containing the flag: `VishwaCTF{0ctOc@t_Ma5c0t}`
