@@ -61,9 +61,9 @@ Flag: `VishwaCTF{28122018_simmba}`
 
 ### Can you see me?
 
-- Running [foremost](https://foremost.sourceforge.net/)/[binwalk](https://github.com/ReFirmLabs/binwalk) on the image gives a `.zip` file, from which `hereissomething.wav` is extracted.
+- Upon running strings on the image file, we can see that the trailing end has an audio file mentioneed in it. Then running the `unzip` Linux command on the image file will give us the audio file.
 - Opening the wav file in [sonic visualiser](https://www.sonicvisualiser.org/) and viewing the spectrogram gives the flag => `vishwaCTF{n0w_y0u_533_m3}`
-
+![canyouseeme.png](./images/canyouseeme.png)
 
 
 ### The Sender Conundrum
