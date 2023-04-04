@@ -61,7 +61,7 @@ Flag: `VishwaCTF{28122018_simmba}`
 
 ### Can you see me?
 
-- Upon running strings on the image file, we can see that the trailing end has an audio file mentioneed in it. Then running the `unzip` Linux command on the image file will give us the audio file.
+- Upon running strings on the image file, we can see that the trailing end has an audio file mentioned in it. Then running the `unzip` Linux command on the image file will give us the audio file.
 - Opening the wav file in [sonic visualiser](https://www.sonicvisualiser.org/) and viewing the spectrogram gives the flag => `vishwaCTF{n0w_y0u_533_m3}`
 ![canyouseeme.png](./images/canyouseeme.png)
 
