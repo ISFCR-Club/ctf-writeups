@@ -484,7 +484,7 @@ Flag: `VishwaCTF{b1inD_cmd-i}`
 
 
 
-### Injector
+### 1nj3ct0r
 
 Simple USB forensics challenges. Just open the file with wireshark and go through each packet containing data. Look at `HID data > Array > value`.
 
@@ -531,3 +531,27 @@ Notice that the exe provided is compiled python application. We can use `pyi-arc
 ```
 
 Flag: `VishwaCTF{15_pyth0n_th3_b35t_l4ngu4g3??}`
+
+### Quick Heal
+
+The mkv file has morse code in the audio, and pieces of qr code scattered through the video. Decoding the morse code gives `.5NJ0Y.C0UP0NS`. Scanning the qr code gives `VishwaCTF{S3cur1ty.S1mpl1f13`
+
+![qr](./images/qr_code_vishwact.png)
+
+Flag: `VishwaCTF{S3cur1ty.S1mpl1f13d.5NJ0Y.C0UP0NS}`
+
+### Phi-Calculator
+
+Looking at the starting lines of the python file, we get parts of the flag `VishwaCTF{m4k3_it_possibl3_xxxxxxxx}`. The x part needs to be decoded. The `check_key` function tells us what the `xxxxxxxx` is.
+
+```
+import hashlib
+
+x = hashlib.sha256(b"vishwaCTF").hexdigest()
+decoded = x[4] + x[5] + x[3] + x[6] + x[2] + x[7] + x[1] + x[8]
+
+flag = "VishwaCTF{m4k3_it_possibl3_" + decoded + "}"
+print(flag)
+```
+
+Flag: `VishwaCTF{m4k3_it_possibl3_b7cdc517}`
